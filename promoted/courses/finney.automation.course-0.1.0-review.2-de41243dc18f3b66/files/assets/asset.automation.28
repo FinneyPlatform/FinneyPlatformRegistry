@@ -1,0 +1,8 @@
+september.csv — accessible text
+invoice_id,unit,period,amount_usd
+0017,EAST,2026-09,100.00
+ 0018 ,WEST,2026-09,200.50
+0019,EAST,2026-09,0
+0020,WEST,2026-09,99.50
+,EAST,2026-09,5
+0021,WEST,2026-09,unknown

@@ -1,0 +1,15 @@
+Specify a monthly close-file preparation routine — learner brief
+Fictional Northstar Services training material.
+Current and future process
+Receive 10 min, inspect names/periods 10, create index 10, review completeness 15. Proposed run 3, review 15, recovery 5 min. Fictional estimates. Files: EAST-2026-09-AP.pdf; WEST-2026-09-AR.pdf; EAST-2026-08-AP.pdf; unlabelled.pdf. Run September. Read filenames, write new draft index only. No deletion, approval, sending.
+Task
+Northstar repeatedly renames and indexes close support files. Scope a routine that creates a draft index without approving the support.
+Actions
+	1	Map the four current steps and mark review completeness as retained human work.
+	2	Ask AI for an input contract and an output-only routine specification.
+	3	Define accepted filename parts (unit, period, support type) and reject ambiguous names.
+	4	Trace all four filenames for a September run, recording two current-period candidates and two exceptions.
+	5	Compare 45 minutes baseline with 23 minutes proposed total and label the 22-minute difference an untested scenario estimate.
+	6	Write a stop condition for missing or ambiguous inputs.
+Output
+Current/future steps; trigger; filename contract; allowed/blocked actions; owner; tabletop disposition; time comparison.

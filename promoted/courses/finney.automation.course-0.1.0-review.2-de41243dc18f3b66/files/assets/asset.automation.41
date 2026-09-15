@@ -1,0 +1,33 @@
+# Prove the routine works for another period — evidence template
+
+Preserve initial AI output and human corrections. No credentials.
+
+## Two commands
+
+[Your response]
+
+## Per-run counts
+
+[Your response]
+
+## Wrong-period/invalid-period reasons
+
+[Your response]
+
+## Comparison of accepted outputs
+
+[Your response]
+
+## Input-preservation note
+
+[Your response]
+
+## Verification record
+
+| Check | Expected | Actual | Source/location | Correction/retest |
+|---|---|---|---|---|
+| Describe | State expectation | Observed, not assumed | Locate | Explain |
+
+## Limits
+
+[What was not tested or supported?]

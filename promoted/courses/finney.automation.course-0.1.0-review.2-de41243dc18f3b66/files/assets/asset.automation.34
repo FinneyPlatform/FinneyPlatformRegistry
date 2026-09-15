@@ -1,0 +1,27 @@
+Test duplicate suppression in a local workflow simulation — evidence template
+Preserve initial AI output and human corrections. No credentials.
+Key design
+[Your response]
+Source code
+[Your response]
+First/replay logs
+[Your response]
+Effect counts
+[Your response]
+Duplicate dispositions
+[Your response]
+Concurrency limitation
+[Your response]
+Verification record
+Check
+Expected
+Actual
+Source/location
+Correction/retest
+Describe
+State expectation
+Observed, not assumed
+Locate
+Explain
+Limits
+[What was not tested or supported?]
