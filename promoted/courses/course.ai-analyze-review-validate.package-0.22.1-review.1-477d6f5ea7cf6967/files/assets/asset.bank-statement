@@ -1,0 +1,8 @@
+Bank ID,Date,Description,Amount USD
+B001,2026-03-02,Customer receipt,50000
+B002,2026-03-05,Vendor payment,-24000
+B003,2026-03-11,Customer receipt,31500
+B004,2026-03-20,Payroll,-185000
+B005,2026-03-27,Bank fee,-125
+B006,2026-03-28,Customer receipt,12000
+B007,2026-03-31,Wire payment,-18000

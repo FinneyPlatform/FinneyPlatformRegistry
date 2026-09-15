@@ -1,0 +1,6 @@
+Date,JE,Account,Description,Debit,Credit,Preparer
+2026-03-02,JE301,6400,Outside counsel retainer,30000,0,KM
+2026-03-05,JE322,6400,Routine legal invoice,6500,0,AP
+2026-03-18,JE411,6400,Settlement accrual,125000,0,KM
+2026-03-31,JE498,6400,Accrual reversal,0,30000,SYSTEM
+2026-03-31,JE499,6400,Manual top-side adjustment,47500,0,CFO

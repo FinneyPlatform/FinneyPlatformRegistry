@@ -1,0 +1,9 @@
+JE ID,Timestamp,Preparer,Approver,Debit account,Credit account,Amount USD,Description
+JE001,2026-03-01 10:10,A. Chen,M. Diaz,6100,7200,12543.28,Accrual true-up
+JE002,2026-03-29 22:41,B. Singh,M. Diaz,6400,1000,99900,Manual consulting adjustment
+JE003,2026-03-31 09:05,C. Jones,C. Jones,7200,2100,48000,Month-end accrual
+JE004,2026-03-31 18:20,A. Chen,M. Diaz,1500,6100,100000,Marketing reclass
+JE005,2026-03-15 12:00,D. Lopez,M. Diaz,6500,1000,24000,Monthly depreciation
+JE006,2026-03-31 23:55,B. Singh,M. Diaz,9999,1000,175000,Close adjustment
+JE007,2026-03-10 11:30,E. Patel,M. Diaz,6100,2000,18500,Vendor accrual INV-310
+JE008,2026-03-22 14:10,A. Chen,M. Diaz,7200,2100,50000,Sunday adjustment approved per close ticket CT-8
