@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>meeting-record-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Draft minutes and an action-focused follow-up — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Numbered transcript</h2>
+<p>L1 Controller: I approve moving the internal draft review to September 27.
+L2 Analyst: I propose a new dashboard.
+L3 Controller: We have not decided on that.
+L4 Operations lead: I agree to check missing support, but September 24 may be too soon.
+L5 Controller: Let us confirm timing later.
+L6 Analyst: The checklist needs updating.
+L7 Controller: No owner has been assigned.</p>
+<h2>Task</h2>
+<p>Northstar&#39;s close meeting contains a decision, a proposal, and an ambiguous deadline. Prepare an accurate record.</p>
+<h2>Actions</h2>
+<ol>
+<li>Read the transcript and mark explicit agreement separately from suggestions.</li>
+<li>Ask AI for decision, proposal, and action tables with line references.</li>
+<li>Check every owner and date; leave the checklist owner unassigned and support due date unconfirmed.</li>
+<li>Draft a follow-up that asks for those two clarifications.</li>
+<li>Compare the follow-up against the tables and correct any status drift.</li>
+</ol>
+<h2>Output</h2>
+<p>Decision register; proposal list; action register with unknown fields; follow-up up to 180 words; line references.</p>
+</main></html>

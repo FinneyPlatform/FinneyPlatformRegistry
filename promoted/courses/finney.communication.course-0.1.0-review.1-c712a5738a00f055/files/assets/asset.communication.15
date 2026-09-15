@@ -1,0 +1,33 @@
+# Adapt the decision brief into three presentation pages — learner brief
+
+Fictional Northstar Services training material.
+
+## Approved fictional facts
+F1 September budget USD 200,000.
+F2 actual USD 218,000; supplied variance USD 18,000 / 9%.
+F3 approved explanation USD 12,000 contractor extension and USD 6,000 travel.
+F4 forecast revision proposed, unapproved.
+F5 operations lead must confirm remaining contractor end date by September 25.
+## Supplied options
+D1 maintain support one month, estimated incremental USD 8,000.
+D2 reduce support, estimated two-week delay.
+D3 controller recommends D1; CFO decision requested September 26. Neither option approved.
+D4 revenue effect unknown. Estimates are fictional writing inputs.
+
+
+## Task
+
+The CFO will discuss the same decision in a short leadership meeting. Specify the message of each page.
+
+## Actions
+
+
+1. Assign one purpose to each page: situation, supplied options, decision.
+2. Ask AI for three factual titles and brief speaker notes.
+3. Check that titles do not imply revenue impact or approval that the packet does not establish.
+4. Write a plain-text equivalent for the suggested comparison table.
+5. Reconcile dates, amounts, and recommendation status across all pages.
+
+
+## Output
+Three page titles; key message per page; supporting facts; speaker notes; text equivalent of any suggested visual.

@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>policy-launch-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Draft an expense-submission change announcement — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Approved notice</h2>
+<p>N1 October 1 effective date: submit receipts within seven calendar days.
+N2 September expenses retain ten-calendar-day rule.
+N3 use existing expense portal.
+N4 unresolved submission problems go to Finance Ops.
+No mileage rate or reimbursement eligibility supplied.</p>
+<h2>Task</h2>
+<p>Northstar changes its expense-submission deadline and needs an announcement employees can follow.</p>
+<h2>Actions</h2>
+<ol>
+<li>List what changes and what remains unspecified.</li>
+<li>Ask AI for an employee announcement with an effective date and numbered actions.</li>
+<li>Create four FAQ questions covering new deadline, September expenses, submission channel, and an unsupported mileage question.</li>
+<li>Answer the first three from N1–N4 and route the mileage question to Finance Ops without inventing a rate.</li>
+<li>Ask AI to read as a new employee and identify ambiguous wording; make one source-consistent revision.</li>
+</ol>
+<h2>Output</h2>
+<p>Announcement up to 220 words; four-question FAQ; source-to-instruction map; simulated reader feedback and edit.</p>
+</main></html>
