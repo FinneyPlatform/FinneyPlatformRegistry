@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>replay-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Test duplicate suppression in a local workflow simulation — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Mock ledger</h2>
+<p>Requests September/A, B, A, C. Stable business key period/id. Effect is local draft entry only. Record attempts separately. Single-process exclusive lock; no production atomicity guarantee.</p>
+<h2>Task</h2>
+<p>Northstar must avoid creating duplicate draft index entries when a close routine is rerun.</p>
+<h2>Actions</h2>
+<ol>
+<li>Define the stable key and explain why a random run ID alone would not suppress a replay.</li>
+<li>Ask AI to implement the local mock ledger with explicit duplicate dispositions and no external writes.</li>
+<li>Run the four-request fixture once with the attached files and count unique effects.</li>
+<li>Replay the same fixture and confirm the effect count remains three.</li>
+<li>Document that single-process file behavior does not establish production atomicity or concurrent safety.</li>
+</ol>
+<h2>Output</h2>
+<p>Key design; source code; first/replay logs; effect counts; duplicate dispositions; concurrency limitation.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>failure.json</li>
+<li>ledger.py</li>
+<li>replay.json</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>

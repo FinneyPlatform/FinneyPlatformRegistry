@@ -1,0 +1,19 @@
+import json,argparse,os
+from pathlib import Path
+p=argparse.ArgumentParser();p.add_argument("input");p.add_argument("--state",required=True);p.add_argument("--fail-after-b",action="store_true");a=p.parse_args()
+state=Path(a.state);state.mkdir(parents=True,exist_ok=True);lock=state/"lock"
+fd=os.open(lock,os.O_CREAT|os.O_EXCL|os.O_WRONLY)
+try:
+ effects=json.loads((state/"effects.json").read_text()) if (state/"effects.json").exists() else {}
+ for r in json.loads(Path(a.input).read_text()):
+  key=str(r.get("period",""))+"/"+str(r.get("id",""))
+  if not r.get("period") or not r.get("id"):status="rejected"
+  elif key in effects:status="already-completed"
+  else:
+   effects[key]={"draft":True}
+   with (state/"effects.tmp").open("w") as f:json.dump(effects,f);f.flush();os.fsync(f.fileno())
+   (state/"effects.tmp").replace(state/"effects.json");status="created"
+  with (state/"attempts.jsonl").open("a") as f:f.write(json.dumps({"key":key,"status":status})+"\n")
+  if a.fail_after_b and r.get("id")=="B" and status=="created":raise SystemExit("injected lost acknowledgment after B")
+ print("effects",len(effects))
+finally:os.close(fd);lock.unlink()

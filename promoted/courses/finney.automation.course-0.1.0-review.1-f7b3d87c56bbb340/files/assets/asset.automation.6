@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ledger.py</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>ledger.py — accessible text</h1><pre>import json,argparse,os
+from pathlib import Path
+p=argparse.ArgumentParser();p.add_argument(&quot;input&quot;);p.add_argument(&quot;--state&quot;,required=True);p.add_argument(&quot;--fail-after-b&quot;,action=&quot;store_true&quot;);a=p.parse_args()
+state=Path(a.state);state.mkdir(parents=True,exist_ok=True);lock=state/&quot;lock&quot;
+fd=os.open(lock,os.O_CREAT|os.O_EXCL|os.O_WRONLY)
+try:
+ effects=json.loads((state/&quot;effects.json&quot;).read_text()) if (state/&quot;effects.json&quot;).exists() else {}
+ for r in json.loads(Path(a.input).read_text()):
+  key=str(r.get(&quot;period&quot;,&quot;&quot;))+&quot;/&quot;+str(r.get(&quot;id&quot;,&quot;&quot;))
+  if not r.get(&quot;period&quot;) or not r.get(&quot;id&quot;):status=&quot;rejected&quot;
+  elif key in effects:status=&quot;already-completed&quot;
+  else:
+   effects[key]={&quot;draft&quot;:True}
+   with (state/&quot;effects.tmp&quot;).open(&quot;w&quot;) as f:json.dump(effects,f);f.flush();os.fsync(f.fileno())
+   (state/&quot;effects.tmp&quot;).replace(state/&quot;effects.json&quot;);status=&quot;created&quot;
+  with (state/&quot;attempts.jsonl&quot;).open(&quot;a&quot;) as f:f.write(json.dumps({&quot;key&quot;:key,&quot;status&quot;:status})+&quot;\n&quot;)
+  if a.fail_after_b and r.get(&quot;id&quot;)==&quot;B&quot; and status==&quot;created&quot;:raise SystemExit(&quot;injected lost acknowledgment after B&quot;)
+ print(&quot;effects&quot;,len(effects))
+finally:os.close(fd);lock.unlink()
+</pre></main></html>

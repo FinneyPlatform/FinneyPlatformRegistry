@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>normalize-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Create a local invoice-register preparation script — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Contract</h2>
+<p>invoice_id text; unit EAST/WEST; period YYYY-MM (month 01–12); amount_usd finite decimal.
+Trim surrounding whitespace. Reject blank ID, invalid amount/unit/period, wrong period. Preserve source row. No deduplication. Explicit --period; write accepted.csv and exceptions.csv into new --out directory; never overwrite.</p>
+<h2>Task</h2>
+<p>Northstar receives small invoice registers with inconsistent surrounding whitespace. Prepare them for later review without choosing accounting treatment.</p>
+<h2>Actions</h2>
+<ol>
+<li>Specify trimming of surrounding whitespace while preserving IDs as strings and never inferring missing values.</li>
+<li>Ask AI to generate a standard-library Python script taking input path, --period, and a new output directory.</li>
+<li>Read the script and remove network access, deletion, input overwrites, or hard-coded absolute paths.</li>
+<li>With the attached fixtures, run the command in the approved local practice folder and inspect accepted/exception files.</li>
+<li>Confirm four accepted and two rejected rows, retained 0017, and traceable source row numbers.</li>
+<li>Save the runnable script and run evidence, including any correction made after inspection.</li>
+</ol>
+<h2>Output</h2>
+<p>Rule specification; command used; run counts; exception reasons; script explanation; verification and corrections.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>normalize.py</li>
+<li>october.csv</li>
+<li>september.csv</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>

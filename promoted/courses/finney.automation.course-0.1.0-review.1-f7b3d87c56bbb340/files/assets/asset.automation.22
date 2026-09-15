@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>normalize.py</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>normalize.py — accessible text</h1><pre>import argparse,csv,re
+from pathlib import Path
+from decimal import Decimal,InvalidOperation
+def main():
+ p=argparse.ArgumentParser();p.add_argument(&quot;input&quot;);p.add_argument(&quot;--period&quot;,required=True);p.add_argument(&quot;--out&quot;,required=True);a=p.parse_args()
+ if not re.fullmatch(r&quot;\d{4}-(0[1-9]|1[0-2])&quot;,a.period):p.error(&quot;invalid requested period&quot;)
+ rows=list(csv.DictReader(Path(a.input).open(newline=&quot;&quot;)))
+ expected={&quot;invoice_id&quot;,&quot;unit&quot;,&quot;period&quot;,&quot;amount_usd&quot;}
+ if rows and set(rows[0])!=expected:p.error(&quot;invalid columns&quot;)
+ out=Path(a.out);out.mkdir(parents=True,exist_ok=False)
+ accepted=[];errors=[]
+ for i,r in enumerate(rows,2):
+  r={k:v.strip() if isinstance(v,str) else &quot;&quot; for k,v in r.items()};reason=[]
+  if not r[&quot;invoice_id&quot;]:reason.append(&quot;blank invoice_id&quot;)
+  if r[&quot;unit&quot;] not in [&quot;EAST&quot;,&quot;WEST&quot;]:reason.append(&quot;unknown unit&quot;)
+  if not re.fullmatch(r&quot;\d{4}-(0[1-9]|1[0-2])&quot;,r[&quot;period&quot;]):reason.append(&quot;invalid period&quot;)
+  elif r[&quot;period&quot;]!=a.period:reason.append(&quot;wrong period&quot;)
+  try:
+   if not Decimal(r[&quot;amount_usd&quot;]).is_finite():raise InvalidOperation
+  except InvalidOperation:reason.append(&quot;invalid amount&quot;)
+  row={&quot;source_row&quot;:i,**r}
+  (errors if reason else accepted).append({**row,**({&quot;reason&quot;:&quot;; &quot;.join(reason)} if reason else {})})
+ for name,data,fields in [(&quot;accepted&quot;,accepted,[&quot;source_row&quot;,&quot;invoice_id&quot;,&quot;unit&quot;,&quot;period&quot;,&quot;amount_usd&quot;]),(&quot;exceptions&quot;,errors,[&quot;source_row&quot;,&quot;invoice_id&quot;,&quot;unit&quot;,&quot;period&quot;,&quot;amount_usd&quot;,&quot;reason&quot;])]:
+  with (out/(name+&quot;.csv&quot;)).open(&quot;w&quot;,newline=&quot;&quot;) as f:
+   w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(data)
+ print({&quot;input&quot;:len(rows),&quot;accepted&quot;:len(accepted),&quot;exceptions&quot;:len(errors)})
+if __name__==&quot;__main__&quot;:main()
+</pre></main></html>

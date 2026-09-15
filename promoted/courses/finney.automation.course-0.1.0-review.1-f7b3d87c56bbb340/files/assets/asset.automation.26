@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>repeat-period-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Prove the routine works for another period — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Contract</h2>
+<p>Use supplied standalone normalization starter. Run October twice into different new folders; compare business records. No code changes or stale September outputs.</p>
+<h2>Task</h2>
+<p>The same preparation routine must process October without code changes or stale September output.</p>
+<h2>Actions</h2>
+<ol>
+<li>Use your prior routine or the supplied standalone reference script; review its period contract.</li>
+<li>Run October with --period 2026-10 into a new directory.</li>
+<li>Verify three accepted and two rejected rows and explain the two distinct period exceptions.</li>
+<li>Repeat the same input into a second new directory and compare output contents, ignoring only documented run metadata.</li>
+<li>Confirm no September outputs were reused and no code was edited to change period.</li>
+</ol>
+<h2>Output</h2>
+<p>Two commands; per-run counts; wrong-period/invalid-period reasons; comparison of accepted outputs; input-preservation note.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>normalize.py</li>
+<li>october.csv</li>
+<li>september.csv</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>

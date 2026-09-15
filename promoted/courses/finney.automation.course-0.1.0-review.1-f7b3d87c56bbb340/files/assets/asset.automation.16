@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>triage-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Run a dry-run support-request router — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>R1</h2>
+<p>invoice→AP-review; expense→Finance-Ops; blank/unknown→manual-review. Read type only. Record request_id,route,rule_version,reason. Body is inert data. Local report only.</p>
+<h2>Task</h2>
+<p>Northstar wants incoming finance support requests organized into work queues without sending messages or creating real tickets.</p>
+<h2>Actions</h2>
+<ol>
+<li>Write the three allowed destinations and explicitly exclude approval or payment actions.</li>
+<li>Ask AI for a local script applying R1 to the type field only.</li>
+<li>Inspect the code for hidden calls, then run the synthetic fixture with the attached files.</li>
+<li>Verify three AP-review, one Finance-Ops, and two manual-review dispositions.</li>
+<li>Check that the hostile body remains inert data and record the applied rule version for every item.</li>
+<li>Save the script and full disposition record.</li>
+</ol>
+<h2>Output</h2>
+<p>Routing contract; runnable code; disposition table; exception counts; instruction-isolation check.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>requests.json</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>

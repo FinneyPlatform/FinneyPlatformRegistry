@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>september.csv</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>september.csv — accessible text</h1><pre>invoice_id,unit,period,amount_usd
+0017,EAST,2026-09,100.00
+ 0018 ,WEST,2026-09,200.50
+0019,EAST,2026-09,0
+0020,WEST,2026-09,99.50
+,EAST,2026-09,5
+0021,WEST,2026-09,unknown
+</pre></main></html>

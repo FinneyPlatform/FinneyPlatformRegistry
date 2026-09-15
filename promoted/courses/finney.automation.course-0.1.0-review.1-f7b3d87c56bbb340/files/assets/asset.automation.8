@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>partial-failure-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Recover after a simulated lost acknowledgment — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Failure</h2>
+<p>A/B/C September. Fail once after B effect is durably recorded before acknowledgment; stop before C. Recovery reads ledger; one recovery pass. D lacks period and must be rejected without retry.</p>
+<h2>Task</h2>
+<p>The routine writes a draft entry but fails before returning success. Demonstrate that recovery does not repeat the effect.</p>
+<h2>Actions</h2>
+<ol>
+<li>Mark the failure point in the sequence: effect recorded, acknowledgment absent.</li>
+<li>Run the injected-failure scenario and inspect which effects exist.</li>
+<li>Ask AI for a recovery path that reads the ledger before creating effects.</li>
+<li>Recover B as already completed and process C; reject invalid D without retry.</li>
+<li>Confirm A, B, and C each have one effect and write an operator instruction for an unresolved failure.</li>
+</ol>
+<h2>Output</h2>
+<p>Failure point; before/after ledger; recovery attempts; rejected item; operator instruction.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>failure.json</li>
+<li>ledger.py</li>
+<li>replay.json</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>
