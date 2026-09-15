@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>refresh-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Add safe local refresh and test rejected data — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Refresh</h2>
+<p>Replace-only local JSON import. Validate entire candidate: required fields, numeric amounts, one valid period, unique keys, EAST/WEST, USD. Reject duplicate/missing actual/EUR; preserve last valid state. Empty data explicit.</p>
+<h2>Task</h2>
+<p>The next period&#39;s data should replace the September view only if the whole file passes validation.</p>
+<h2>Actions</h2>
+<ol>
+<li>Specify replace-only refresh and all-or-nothing validation.</li>
+<li>Ask AI to add local JSON file selection with validation of keys, required numeric fields, currency, and period consistency.</li>
+<li>Load the valid October fixture and confirm two rows and 220/220/0.</li>
+<li>Try each invalid variant and verify that an explanatory error appears while October remains the current valid dataset.</li>
+<li>Check that the displayed period and row count always match the last valid data.</li>
+<li>Record the refresh limitation: local-only, no live integration.</li>
+</ol>
+<h2>Output</h2>
+<p>Refresh contract; revised source; valid/invalid test results; last-valid-state evidence; data-status label.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>dashboard-starter.html</li>
+<li>invalid-currency.json</li>
+<li>invalid-duplicate.json</li>
+<li>invalid-missing.json</li>
+<li>october.json</li>
+<li>september.json</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>

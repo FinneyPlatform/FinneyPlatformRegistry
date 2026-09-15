@@ -1,0 +1,25 @@
+# Build a local close-task tracker with a blocked state — learner brief
+
+Fictional Northstar Services training material.
+
+## Tracker
+C1 AP support open; C2 AR support blocked reason awaiting support; C3 GL support done. Enter blocked requires reason; blocked must reopen; done must reopen before blocked. JSON schema_version1. Whole-import validation, local storage if available, session-only warning otherwise. Export/import. No login or security claims.
+
+## Task
+
+Northstar wants a single-user training tracker that makes blocked work visible.
+
+## Actions
+
+
+1. Write allowed transitions and acceptance cases before generating code.
+2. Ask AI for a standalone tracker with labeled controls, visible blocked reasons, local history, JSON export/import, and storage-failure handling.
+3. Test blocked-without-reason rejection; reopen C3 then block it with a reason; confirm direct done-to-blocked is rejected.
+4. Reload and record whether storage works in your browser; if unavailable, verify a visible session-only warning.
+5. Export state, change one task, then import the prior export and verify recovery; reject malformed schema_version without replacing state.
+6. Confirm that history and persistence are described as local prototype features rather than secure multiuser controls.
+7. Save full source and observed results.
+
+
+## Output
+State model; source; transition tests; reload/storage test; export/import recovery; limitation statement.

@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>september.json</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>september.json — accessible text</h1><pre>[
+  {
+    &quot;unit&quot;: &quot;EAST&quot;,
+    &quot;department&quot;: &quot;Ops&quot;,
+    &quot;period&quot;: &quot;2026-09&quot;,
+    &quot;currency&quot;: &quot;USD&quot;,
+    &quot;budget&quot;: 100,
+    &quot;actual&quot;: 110
+  },
+  {
+    &quot;unit&quot;: &quot;EAST&quot;,
+    &quot;department&quot;: &quot;Sales&quot;,
+    &quot;period&quot;: &quot;2026-09&quot;,
+    &quot;currency&quot;: &quot;USD&quot;,
+    &quot;budget&quot;: 80,
+    &quot;actual&quot;: 70
+  },
+  {
+    &quot;unit&quot;: &quot;WEST&quot;,
+    &quot;department&quot;: &quot;Ops&quot;,
+    &quot;period&quot;: &quot;2026-09&quot;,
+    &quot;currency&quot;: &quot;USD&quot;,
+    &quot;budget&quot;: 120,
+    &quot;actual&quot;: 125
+  },
+  {
+    &quot;unit&quot;: &quot;WEST&quot;,
+    &quot;department&quot;: &quot;Sales&quot;,
+    &quot;period&quot;: &quot;2026-09&quot;,
+    &quot;currency&quot;: &quot;USD&quot;,
+    &quot;budget&quot;: 50,
+    &quot;actual&quot;: 55
+  }
+]</pre></main></html>

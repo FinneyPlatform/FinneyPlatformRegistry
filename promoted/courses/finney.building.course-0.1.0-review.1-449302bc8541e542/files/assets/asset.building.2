@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>tracker-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Build a local close-task tracker with a blocked state — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Tracker</h2>
+<p>C1 AP support open; C2 AR support blocked reason awaiting support; C3 GL support done. Enter blocked requires reason; blocked must reopen; done must reopen before blocked. JSON schema_version1. Whole-import validation, local storage if available, session-only warning otherwise. Export/import. No login or security claims.</p>
+<h2>Task</h2>
+<p>Northstar wants a single-user training tracker that makes blocked work visible.</p>
+<h2>Actions</h2>
+<ol>
+<li>Write allowed transitions and acceptance cases before generating code.</li>
+<li>Ask AI for a standalone tracker with labeled controls, visible blocked reasons, local history, JSON export/import, and storage-failure handling.</li>
+<li>Test blocked-without-reason rejection; reopen C3 then block it with a reason; confirm direct done-to-blocked is rejected.</li>
+<li>Reload and record whether storage works in your browser; if unavailable, verify a visible session-only warning.</li>
+<li>Export state, change one task, then import the prior export and verify recovery; reject malformed schema_version without replacing state.</li>
+<li>Confirm that history and persistence are described as local prototype features rather than secure multiuser controls.</li>
+<li>Save full source and observed results.</li>
+</ol>
+<h2>Output</h2>
+<p>State model; source; transition tests; reload/storage test; export/import recovery; limitation statement.</p>
+</main></html>

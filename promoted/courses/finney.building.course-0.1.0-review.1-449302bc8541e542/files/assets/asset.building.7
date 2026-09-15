@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>cost-calculator-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Build a simple training-cost calculator — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Contract</h2>
+<p>Seats integer0–500; price USD0–1000; setup USD0–100000; monetary inputs max2 decimals. Recurring=seats×price; first month=recurring+setup. No tax/discount. Case10,25.50,100. Test zero, blank, negative, fractional seats and excess precision.</p>
+<h2>Task</h2>
+<p>Northstar wants to explore a fictional monthly tool cost without maintaining a spreadsheet.</p>
+<h2>Actions</h2>
+<ol>
+<li>Write the formula and every input&#39;s units/range before asking AI for code.</li>
+<li>Ask AI for a standalone calculator with explicit labels, calculate/reset actions, formula display, and no external dependencies.</li>
+<li>Inspect handling of blank, negative, noninteger seats, and excessive decimal precision; request errors rather than silent coercion.</li>
+<li>Run the reference case and a zero-seat/zero-setup case with the attached brief.</li>
+<li>Try a blank seat field, -1 seats, and 2.5 seats; record the visible error for each.</li>
+<li>Save source and observed results, including any correction.</li>
+</ol>
+<h2>Output</h2>
+<p>Formula contract; source explanation; valid-case results; invalid-case results; human correction log.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>calculator-starter.html</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>

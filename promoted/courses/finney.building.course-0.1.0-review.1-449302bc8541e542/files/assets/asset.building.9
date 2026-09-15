@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>dashboard-build-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Build a local budget-and-actual dashboard — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Data contract</h2>
+<p>One row per unit/department/month; unique composite key. USD 000. Variance actual−budget. Synchronize unit filter, totals and detail table. No driver inference.</p>
+<h2>Task</h2>
+<p>Northstar wants an interactive view of a small fictional department budget table.</p>
+<h2>Actions</h2>
+<ol>
+<li>State row grain, unique key, USD 000 units, and actual-minus-budget definition.</li>
+<li>Ask AI for a standalone dashboard with unit filter, totals, a simple comparison visual, and a complete detail table.</li>
+<li>Open the saved file and verify all-unit totals 350/360/+10.</li>
+<li>Select East and West and check both totals and visible rows against supplied expected results.</li>
+<li>Use keyboard-only navigation and ensure above-budget status has text or a sign, not color alone.</li>
+<li>Record source changes and any unresolved accessibility issue.</li>
+</ol>
+<h2>Output</h2>
+<p>Data contract; metric definitions; runnable source; filter test table; accessibility notes.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>dashboard-starter.html</li>
+<li>invalid-currency.json</li>
+<li>invalid-duplicate.json</li>
+<li>invalid-missing.json</li>
+<li>october.json</li>
+<li>september.json</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>

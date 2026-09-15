@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>first-prototype-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Build a read-only close-task viewer — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Records</h2>
+<p>T1 East AP open; T2 East AR done; T3 West AP blocked; T4 West GL open; T5 East GL done. Filter status, count, reset; embedded read-only data, no persistence.</p>
+<h2>Task</h2>
+<p>Northstar&#39;s controller wants a small local view of open close tasks for a training demonstration.</p>
+<h2>Actions</h2>
+<ol>
+<li>Write the controller&#39;s question and three acceptance cases: all tasks, open only, reset.</li>
+<li>Ask AI for one self-contained HTML file with embedded synthetic records, status filter, count, and reset.</li>
+<li>Inspect for external requests and remove unnecessary libraries or simulated login screens.</li>
+<li>When the fixture is available, save the source as .html in the approved practice folder and open it in a browser.</li>
+<li>Verify all=5, open=2, blocked=1, and reset=5; inspect the visible rows as well as counts.</li>
+<li>Record one revision and explain where the records live in the file.</li>
+</ol>
+<h2>Output</h2>
+<p>Product brief; acceptance cases; source explanation; actual test results; limitations.</p>
+</main></html>

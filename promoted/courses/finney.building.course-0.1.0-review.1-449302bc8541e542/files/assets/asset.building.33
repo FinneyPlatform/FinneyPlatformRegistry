@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>cost-calculator-evidence.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Build a simple training-cost calculator — evidence template</h1>
+<p>Preserve initial AI output and human corrections. No credentials.</p>
+<h2>Formula contract</h2>
+<p>[Your response]</p>
+<h2>Source explanation</h2>
+<p>[Your response]</p>
+<h2>Valid-case results</h2>
+<p>[Your response]</p>
+<h2>Invalid-case results</h2>
+<p>[Your response]</p>
+<h2>Human correction log</h2>
+<p>[Your response]</p>
+<h2>Verification record</h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Expected</th>
+<th>Actual</th>
+<th>Source/location</th>
+<th>Correction/retest</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Describe</td>
+<td>State expectation</td>
+<td>Observed, not assumed</td>
+<td>Locate</td>
+<td>Explain</td>
+</tr>
+</tbody></table>
+<h2>Limits</h2>
+<p>[What was not tested or supported?]</p>
+</main></html>

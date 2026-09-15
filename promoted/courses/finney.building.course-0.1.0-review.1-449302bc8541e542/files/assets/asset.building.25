@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>handoff-test-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Prepare a prototype for a colleague to evaluate — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Handoff</h2>
+<p>Use own prototype or supplied calculator starter. Six tests: normal,boundary,invalid,reset/recovery,keyboard,reopen. README, expected/actual, defect/retest, owner and limits. No deployment.</p>
+<h2>Task</h2>
+<p>Northstar&#39;s controller wants a reviewable local prototype and evidence before considering any further development.</p>
+<h2>Actions</h2>
+<ol>
+<li>Choose one tool and write run instructions someone can follow without the chat.</li>
+<li>Start from a clean state and execute all six required tests, recording actual results.</li>
+<li>Ask AI to inspect one failure or weakness and propose a minimal fix.</li>
+<li>Apply an understood fix and rerun affected and core cases; if no defect is found, test an additional edge case rather than fabricate one.</li>
+<li>Write known limits, including local-only use, synthetic data, untested production controls, and any accessibility gaps.</li>
+<li>Package the handoff as source and Markdown evidence only in the future learner exercise; do not publish the prototype.</li>
+</ol>
+<h2>Output</h2>
+<p>README content; source version; six-case expected/actual matrix; defect log; correction/retest; known limits; proposed maintenance owner role.</p>
+<h2>Supplied local practice files</h2>
+<ul>
+<li>calculator-starter.html</li>
+</ul>
+<p>Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.</p>
+</main></html>
