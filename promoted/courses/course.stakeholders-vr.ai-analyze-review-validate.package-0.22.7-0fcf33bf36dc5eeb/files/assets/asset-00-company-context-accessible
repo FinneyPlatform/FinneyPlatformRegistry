@@ -1,0 +1,15 @@
+# Finney Incorporated — Company Context
+
+    **Training notice:** Fictional training data — not for operational use
+
+## Company profile
+Finney Incorporated is a fictional calendar-year, accrual-basis B2B software and professional-services company reporting under US GAAP. Annual revenue is approximately $75 million and headcount is 450.
+
+## Training period
+Exercises use March 2026 month-end data. Monthly close is business day 7. Reporting currency is USD.
+
+## Review thresholds
+Overall close materiality: $100,000. Posting threshold: $10,000. Clearly trivial threshold: $5,000. Items below a threshold may still require action for fraud, compliance, control, or recurring-pattern reasons.
+
+## Control expectations
+Evidence must be traceable to a record, clause, policy provision, or reproducible calculation. Missing evidence is not evidence of failure; classify it separately and request follow-up.

@@ -1,0 +1,7 @@
+Driver ID,Account,Description,Impact USD,Evidence reference
+D001,Cloud hosting,Northstar onboarding fee,18000,Vendor invoice INV-310
+D002,Cloud hosting,Usage spike for Project Aurora,66000,Usage report UR-03
+D003,Marketing,Finney Forward campaign invoices,84000,Invoices M101-M103
+D004,Marketing,Conference sponsorship,35000,Invoice M104
+D005,Professional services revenue,Project Helix milestone deferred pending acceptance,-45000,Acceptance tracker AT-77
+D006,Payroll,Two unbudgeted contractors,18000,Contractor register CR-03
