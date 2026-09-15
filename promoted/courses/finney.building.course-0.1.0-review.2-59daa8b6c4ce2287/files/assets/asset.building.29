@@ -1,0 +1,27 @@
+Build a local close-task tracker with a blocked state — evidence template
+Preserve initial AI output and human corrections. No credentials.
+State model
+[Your response]
+Source
+[Your response]
+Transition tests
+[Your response]
+Reload/storage test
+[Your response]
+Export/import recovery
+[Your response]
+Limitation statement
+[Your response]
+Verification record
+Check
+Expected
+Actual
+Source/location
+Correction/retest
+Describe
+State expectation
+Observed, not assumed
+Locate
+Explain
+Limits
+[What was not tested or supported?]

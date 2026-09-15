@@ -1,0 +1,33 @@
+# Add a comparison without breaking the calculator — evidence template
+
+Preserve initial AI output and human corrections. No credentials.
+
+## Change request
+
+[Your response]
+
+## Revised source
+
+[Your response]
+
+## Original-case regression results
+
+[Your response]
+
+## Comparison results
+
+[Your response]
+
+## Invalid-b behavior
+
+[Your response]
+
+## Verification record
+
+| Check | Expected | Actual | Source/location | Correction/retest |
+|---|---|---|---|---|
+| Describe | State expectation | Observed, not assumed | Locate | Explain |
+
+## Limits
+
+[What was not tested or supported?]

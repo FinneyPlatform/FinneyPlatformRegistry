@@ -1,0 +1,29 @@
+Prepare a prototype for a colleague to evaluate — evidence template
+Preserve initial AI output and human corrections. No credentials.
+Readme content
+[Your response]
+Source version
+[Your response]
+Six-case expected/actual matrix
+[Your response]
+Defect log
+[Your response]
+Correction/retest
+[Your response]
+Known limits
+[Your response]
+Proposed maintenance owner role
+[Your response]
+Verification record
+Check
+Expected
+Actual
+Source/location
+Correction/retest
+Describe
+State expectation
+Observed, not assumed
+Locate
+Explain
+Limits
+[What was not tested or supported?]

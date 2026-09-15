@@ -1,0 +1,27 @@
+invalid-duplicate.json — accessible text
+[
+  {
+    "unit": "EAST",
+    "department": "Ops",
+    "period": "2026-10",
+    "currency": "USD",
+    "budget": 100,
+    "actual": 105
+  },
+  {
+    "unit": "WEST",
+    "department": "Ops",
+    "period": "2026-10",
+    "currency": "USD",
+    "budget": 120,
+    "actual": 115
+  },
+  {
+    "unit": "EAST",
+    "department": "Ops",
+    "period": "2026-10",
+    "currency": "USD",
+    "budget": 100,
+    "actual": 105
+  }
+]

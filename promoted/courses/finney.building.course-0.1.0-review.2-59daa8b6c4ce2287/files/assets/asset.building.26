@@ -1,0 +1,24 @@
+# Build a read-only close-task viewer — learner brief
+
+Fictional Northstar Services training material.
+
+## Records
+T1 East AP open; T2 East AR done; T3 West AP blocked; T4 West GL open; T5 East GL done. Filter status, count, reset; embedded read-only data, no persistence.
+
+## Task
+
+Northstar's controller wants a small local view of open close tasks for a training demonstration.
+
+## Actions
+
+
+1. Write the controller's question and three acceptance cases: all tasks, open only, reset.
+2. Ask AI for one self-contained HTML file with embedded synthetic records, status filter, count, and reset.
+3. Inspect for external requests and remove unnecessary libraries or simulated login screens.
+4. When the fixture is available, save the source as .html in the approved practice folder and open it in a browser.
+5. Verify all=5, open=2, blocked=1, and reset=5; inspect the visible rows as well as counts.
+6. Record one revision and explain where the records live in the file.
+
+
+## Output
+Product brief; acceptance cases; source explanation; actual test results; limitations.

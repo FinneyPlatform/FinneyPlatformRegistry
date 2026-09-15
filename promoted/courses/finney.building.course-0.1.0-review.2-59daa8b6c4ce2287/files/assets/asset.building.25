@@ -1,0 +1,18 @@
+Prepare a prototype for a colleague to evaluate — learner brief
+Fictional Northstar Services training material.
+Handoff
+Use own prototype or supplied calculator starter. Six tests: normal,boundary,invalid,reset/recovery,keyboard,reopen. README, expected/actual, defect/retest, owner and limits. No deployment.
+Task
+Northstar's controller wants a reviewable local prototype and evidence before considering any further development.
+Actions
+	1	Choose one tool and write run instructions someone can follow without the chat.
+	2	Start from a clean state and execute all six required tests, recording actual results.
+	3	Ask AI to inspect one failure or weakness and propose a minimal fix.
+	4	Apply an understood fix and rerun affected and core cases; if no defect is found, test an additional edge case rather than fabricate one.
+	5	Write known limits, including local-only use, synthetic data, untested production controls, and any accessibility gaps.
+	6	Package the handoff as source and Markdown evidence only in the future learner exercise; do not publish the prototype.
+Output
+README content; source version; six-case expected/actual matrix; defect log; correction/retest; known limits; proposed maintenance owner role.
+Supplied local practice files
+	•	calculator-starter.html
+Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.

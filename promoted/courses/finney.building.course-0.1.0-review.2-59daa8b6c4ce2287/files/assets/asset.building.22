@@ -1,0 +1,35 @@
+september.json — accessible text
+[
+  {
+    "unit": "EAST",
+    "department": "Ops",
+    "period": "2026-09",
+    "currency": "USD",
+    "budget": 100,
+    "actual": 110
+  },
+  {
+    "unit": "EAST",
+    "department": "Sales",
+    "period": "2026-09",
+    "currency": "USD",
+    "budget": 80,
+    "actual": 70
+  },
+  {
+    "unit": "WEST",
+    "department": "Ops",
+    "period": "2026-09",
+    "currency": "USD",
+    "budget": 120,
+    "actual": 125
+  },
+  {
+    "unit": "WEST",
+    "department": "Sales",
+    "period": "2026-09",
+    "currency": "USD",
+    "budget": 50,
+    "actual": 55
+  }
+]
