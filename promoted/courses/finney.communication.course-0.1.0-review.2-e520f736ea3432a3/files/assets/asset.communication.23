@@ -1,0 +1,29 @@
+# Escalate a delayed internal handoff — evidence template
+
+Preserve initial AI output and human corrections. No credentials.
+
+## Escalation up to 150 words
+
+[Your response]
+
+## Known/unknown list
+
+[Your response]
+
+## Subject line
+
+[Your response]
+
+## Proposed reviewer
+
+[Your response]
+
+## Verification record
+
+| Check | Expected | Actual | Source/location | Correction/retest |
+|---|---|---|---|---|
+| Describe | State expectation | Observed, not assumed | Locate | Explain |
+
+## Limits
+
+[What was not tested or supported?]
