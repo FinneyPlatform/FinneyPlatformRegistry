@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>self-test-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Use a quiz to find and repair a knowledge gap — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Procurement P1–P5, September 2026</h2>
+<p>P1: Requester records business need.
+P2: Procurement issues approved purchase order.
+P3: Receiving records receipt.
+P4: AP matches invoice to order and receipt; missing receipt goes to AP exception queue.
+P5: Treasury releases payment only after separate authorized approval.
+Glossary: purchase order = purchasing instruction; receipt = evidence of delivery; invoice = supplier payment request; payment approval = separate authority to release funds.
+Owner: Procurement Operations. No thresholds or holiday calendar supplied.</p>
+<p>Quiz themes: order, ownership, missing receipt, matching versus payment approval.</p>
+<h2>Task</h2>
+<p>Before joining a close-process meeting, test your understanding of the same P1–P5 process.</p>
+<h2>Actions</h2>
+<ol>
+<li>Provide P1–P5 to AI and request four questions with answers withheld.</li>
+<li>Answer without consulting the reference; mark uncertainty instead of asking for hints.</li>
+<li>Ask AI for feedback tied to P1–P5.</li>
+<li>Check each correction yourself and explain why one initial answer was incomplete; if all were correct, add a harder handoff question.</li>
+<li>Write a next-day recall prompt that can be used without the original chat.</li>
+</ol>
+<h2>Output</h2>
+<p>Four questions; initial answers; source-based corrections; one-day revisit plan.</p>
+</main></html>

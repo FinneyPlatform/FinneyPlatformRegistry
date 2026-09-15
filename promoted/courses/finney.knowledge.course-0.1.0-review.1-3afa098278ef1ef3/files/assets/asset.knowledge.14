@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>teach-back-brief.md</title><style>body{font:18px system-ui;line-height:1.6;max-width:1000px;margin:2rem auto;padding:1rem;color:#17252d;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse}td,th{border:1px solid #777;padding:.5rem}a{color:#064b8c}</style><main><h1>Explain purchase-to-payment without inventing authority — learner brief</h1>
+<p>Fictional Northstar Services training material.</p>
+<h2>Procurement P1–P5, September 2026</h2>
+<p>P1: Requester records business need.
+P2: Procurement issues approved purchase order.
+P3: Receiving records receipt.
+P4: AP matches invoice to order and receipt; missing receipt goes to AP exception queue.
+P5: Treasury releases payment only after separate authorized approval.
+Glossary: purchase order = purchasing instruction; receipt = evidence of delivery; invoice = supplier payment request; payment approval = separate authority to release funds.
+Owner: Procurement Operations. No thresholds or holiday calendar supplied.</p>
+<h2>Task</h2>
+<p>Northstar is onboarding an FP&amp;A analyst to procurement operations. Learn the process well enough to explain its handoffs.</p>
+<h2>Actions</h2>
+<ol>
+<li>Read P1–P5 and identify the input and output of every stage.</li>
+<li>Ask AI for a 150-word explanation and one analogy with an explicit limitation.</li>
+<li>Trace each process claim to P1–P5; remove any invented threshold.</li>
+<li>Hide the response and explain the handoffs from memory in five sentences.</li>
+<li>Reopen the reference, correct missing handoffs, and record two questions the reference cannot answer.</li>
+</ol>
+<h2>Output</h2>
+<p>Plain-language explanation; analogy and limit; five-stage map; two unanswered policy questions.</p>
+</main></html>
