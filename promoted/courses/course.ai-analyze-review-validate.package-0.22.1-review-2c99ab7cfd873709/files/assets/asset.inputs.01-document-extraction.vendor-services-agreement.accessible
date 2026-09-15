@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Operations Services Agreement — accessible alternative</title>
+  <style>body{font:18px/1.6 Georgia,serif;max-width:72ch;margin:0 auto;padding:2rem;color:#171717;background:#fff}h1,h2{font-family:Arial,sans-serif;line-height:1.2}.notice{border-left:.35rem solid #24557a;padding:.75rem 1rem;background:#eef6fb}a:focus{outline:3px solid #c45500;outline-offset:3px}@media (prefers-color-scheme:dark){body{color:#f5f5f5;background:#171717}.notice{background:#163247}}</style>
+</head>
+<body>
+  <main>
+    <h1>Cloud Operations Services Agreement</h1>
+    <p class="notice"><strong>Training notice:</strong> Fictional training data — not for operational use</p>
+    <section aria-labelledby="s1"><h2 id="s1">Parties and term</h2><p>This Agreement is between Finney Incorporated (Client) and Northstar Cloud Operations LLC (Vendor). Effective date: March 1, 2026. Initial term: March 1, 2026 through February 28, 2027.</p></section>
+<section aria-labelledby="s2"><h2 id="s2">Services and fees</h2><p>Vendor will provide managed cloud monitoring and incident response. Fixed monthly fee: $24,000, billed monthly in arrears. One-time onboarding fee: $18,000 after onboarding acceptance. Usage over 1,200 support hours per year is billed at $165 per hour.</p></section>
+<section aria-labelledby="s3"><h2 id="s3">Payment and service level</h2><p>Invoices are due 30 days after receipt. Client may dispute an invoice within 15 days. Vendor targets 99.9% monthly availability; service credits are the sole remedy for a missed target.</p></section>
+<section aria-labelledby="s4"><h2 id="s4">Renewal and termination</h2><p>The Agreement renews automatically for successive one-year periods unless either party gives at least 60 days written notice before the current term ends. Either party may terminate for uncured material breach after 30 days written notice. Client may terminate for convenience with 90 days written notice.</p></section>
+<section aria-labelledby="s5"><h2 id="s5">Other terms</h2><p>The Agreement does not state a general liability cap. Data-security requirements are in an exhibit not included in the learner packet. Governing law: Delaware.</p></section>
+  </main>
+</body>
+</html>
