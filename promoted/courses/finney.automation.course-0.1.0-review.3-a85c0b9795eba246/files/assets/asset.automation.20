@@ -1,0 +1,20 @@
+Create a local invoice-register preparation script — learner brief
+Fictional Northstar Services training material.
+Contract
+invoice_id text; unit EAST/WEST; period YYYY-MM (month 01–12); amount_usd finite decimal. Trim surrounding whitespace. Reject blank ID, invalid amount/unit/period, wrong period. Preserve source row. No deduplication. Explicit --period; write accepted.csv and exceptions.csv into new --out directory; never overwrite.
+Task
+Northstar receives small invoice registers with inconsistent surrounding whitespace. Prepare them for later review without choosing accounting treatment.
+Actions
+	1	Specify trimming of surrounding whitespace while preserving IDs as strings and never inferring missing values.
+	2	Ask AI to generate a standard-library Python script taking input path, --period, and a new output directory.
+	3	Read the script and remove network access, deletion, input overwrites, or hard-coded absolute paths.
+	4	With the attached fixtures, run the command in the approved local practice folder and inspect accepted/exception files.
+	5	Confirm four accepted and two rejected rows, retained 0017, and traceable source row numbers.
+	6	Save the runnable script and run evidence, including any correction made after inspection.
+Output
+Rule specification; command used; run counts; exception reasons; script explanation; verification and corrections.
+Supplied local practice files
+	•	normalize.py
+	•	october.csv
+	•	september.csv
+Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.

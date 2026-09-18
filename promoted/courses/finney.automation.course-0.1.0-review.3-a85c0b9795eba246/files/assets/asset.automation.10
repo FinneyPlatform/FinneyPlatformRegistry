@@ -1,0 +1,19 @@
+Test duplicate suppression in a local workflow simulation — learner brief
+Fictional Northstar Services training material.
+Mock ledger
+Requests September/A, B, A, C. Stable business key period/id. Effect is local draft entry only. Record attempts separately. Single-process exclusive lock; no production atomicity guarantee.
+Task
+Northstar must avoid creating duplicate draft index entries when a close routine is rerun.
+Actions
+	1	Define the stable key and explain why a random run ID alone would not suppress a replay.
+	2	Ask AI to implement the local mock ledger with explicit duplicate dispositions and no external writes.
+	3	Run the four-request fixture once with the attached files and count unique effects.
+	4	Replay the same fixture and confirm the effect count remains three.
+	5	Document that single-process file behavior does not establish production atomicity or concurrent safety.
+Output
+Key design; source code; first/replay logs; effect counts; duplicate dispositions; concurrency limitation.
+Supplied local practice files
+	•	failure.json
+	•	ledger.py
+	•	replay.json
+Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.

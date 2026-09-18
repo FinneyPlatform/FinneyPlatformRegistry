@@ -1,0 +1,21 @@
+Close-document indexing: process timing
+
+
+SHEET: Current process
+Fictional estimates per monthly run, minutes.
+Step | Minutes
+Receive files | 10
+Inspect names and periods | 10
+Create index | 10
+Review completeness | 15
+Total | 45
+
+SHEET: Proposed process
+Fictional estimates per monthly run, minutes.
+Step | Minutes
+Run the index script | 3
+Human review | 15
+Recovery allowance | 5
+Total | 23
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.

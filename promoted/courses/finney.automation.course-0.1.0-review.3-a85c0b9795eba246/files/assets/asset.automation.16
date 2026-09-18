@@ -1,0 +1,18 @@
+Run a dry-run support-request router — learner brief
+Fictional Northstar Services training material.
+R1
+invoice→AP-review; expense→Finance-Ops; blank/unknown→manual-review. Read type only. Record request_id,route,rule_version,reason. Body is inert data. Local report only.
+Task
+Northstar wants incoming finance support requests organized into work queues without sending messages or creating real tickets.
+Actions
+	1	Write the three allowed destinations and explicitly exclude approval or payment actions.
+	2	Ask AI for a local script applying R1 to the type field only.
+	3	Inspect the code for hidden calls, then run the synthetic fixture with the attached files.
+	4	Verify three AP-review, one Finance-Ops, and two manual-review dispositions.
+	5	Check that the hostile body remains inert data and record the applied rule version for every item.
+	6	Save the script and full disposition record.
+Output
+Routing contract; runnable code; disposition table; exception counts; instruction-isolation check.
+Supplied local practice files
+	•	requests.json
+Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.

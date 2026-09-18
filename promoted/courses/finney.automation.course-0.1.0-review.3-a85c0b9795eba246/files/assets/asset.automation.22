@@ -1,0 +1,28 @@
+normalize.py — accessible text
+import argparse,csv,re
+from pathlib import Path
+from decimal import Decimal,InvalidOperation
+def main():
+ p=argparse.ArgumentParser();p.add_argument("input");p.add_argument("--period",required=True);p.add_argument("--out",required=True);a=p.parse_args()
+ if not re.fullmatch(r"\d{4}-(0[1-9]|1[0-2])",a.period):p.error("invalid requested period")
+ rows=list(csv.DictReader(Path(a.input).open(newline="")))
+ expected={"invoice_id","unit","period","amount_usd"}
+ if rows and set(rows[0])!=expected:p.error("invalid columns")
+ out=Path(a.out);out.mkdir(parents=True,exist_ok=False)
+ accepted=[];errors=[]
+ for i,r in enumerate(rows,2):
+  r={k:v.strip() if isinstance(v,str) else "" for k,v in r.items()};reason=[]
+  if not r["invoice_id"]:reason.append("blank invoice_id")
+  if r["unit"] not in ["EAST","WEST"]:reason.append("unknown unit")
+  if not re.fullmatch(r"\d{4}-(0[1-9]|1[0-2])",r["period"]):reason.append("invalid period")
+  elif r["period"]!=a.period:reason.append("wrong period")
+  try:
+   if not Decimal(r["amount_usd"]).is_finite():raise InvalidOperation
+  except InvalidOperation:reason.append("invalid amount")
+  row={"source_row":i,**r}
+  (errors if reason else accepted).append({**row,**({"reason":"; ".join(reason)} if reason else {})})
+ for name,data,fields in [("accepted",accepted,["source_row","invoice_id","unit","period","amount_usd"]),("exceptions",errors,["source_row","invoice_id","unit","period","amount_usd","reason"])]:
+  with (out/(name+".csv")).open("w",newline="") as f:
+   w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(data)
+ print({"input":len(rows),"accepted":len(accepted),"exceptions":len(errors)})
+if __name__=="__main__":main()

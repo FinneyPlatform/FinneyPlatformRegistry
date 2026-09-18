@@ -1,0 +1,8 @@
+Run log B
+
+2026-11-02T09:00:03 normalize.py october-extract.csv --period 2026-10 --out runs/2026-11-02-b
+2026-11-02T09:00:04 input=6 accepted=3 rejected=1 unresolved=2
+2026-11-02T09:00:04 note: unit value NORTH not in contract (EAST/WEST)
+2026-11-02T09:00:04 exit=0
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.

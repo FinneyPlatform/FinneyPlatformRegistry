@@ -1,0 +1,19 @@
+replay.json — accessible text
+[
+  {
+    "period": "2026-09",
+    "id": "A"
+  },
+  {
+    "period": "2026-09",
+    "id": "B"
+  },
+  {
+    "period": "2026-09",
+    "id": "A"
+  },
+  {
+    "period": "2026-09",
+    "id": "C"
+  }
+]
