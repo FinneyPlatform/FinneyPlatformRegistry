@@ -1,0 +1,42 @@
+# Scenario Brief: Expense Policy Helper
+
+**Company:** Northstar Services (fictional)
+**Team:** Accounts Payable, within Finance
+**Requested by:** Dana Whitfield, Controller
+
+## Northstar in brief
+
+Northstar Services is a professional services firm with about 600 staff in three offices: Chicago, Denver and Toronto. A finance team of 12 handles payables, payroll, reporting and the month-end close. Staff travel often to client sites.
+
+## The problem
+
+The AP team gets about 60 expense-policy questions each week by email and Slack. Most are the same ten questions: meal limits, hotel caps, missing receipts, mileage, client entertainment. Priya Shah, the AP Lead, spends about four hours a week answering them. Answers are not always consistent between team members.
+
+The policy itself is clear. People just don't read it.
+
+## What the team needs
+
+An agent that any Northstar employee can ask about the expense policy in plain language, and that:
+
+- answers from the current policy only, and names the section it used;
+- gives the limit or rule, then says what the person should do next;
+- never approves or rejects a claim, and never promises a reimbursement;
+- sends anything the policy does not clearly cover to the AP team at ap-help@northstar.example instead of guessing;
+- keeps answers short and friendly, because staff often ask from a phone between meetings.
+
+## What Dana has said
+
+- "The policy file is the only source. If it's not in there, the agent says so."
+- "It should remember which questions keep coming up so we can improve the policy."
+- "It should remember that the current policy is version 4.2, effective 1 July 2026, and that any interpretation needs my sign-off."
+- "It must not remember anything about individual people's claims."
+- "It doesn't need to do anything on a schedule. It just answers when asked."
+- "Staff should reach it in Finney chat. If Slack is connected, the #ask-expenses channel too."
+
+## Starting file
+
+- Northstar Expense Policy v4.2 (provided with this exercise)
+
+## Your job in this exercise
+
+Complete the Agent Design Worksheet for this agent. Use only facts from this brief and the policy. Where the brief is silent, make a sensible choice and note it on the worksheet.

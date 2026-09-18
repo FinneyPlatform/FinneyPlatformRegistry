@@ -1,0 +1,46 @@
+# Sample Invoices and Purchase Orders
+
+**Company:** Northstar Services (fictional). Training data only. All amounts in USD.
+
+Use this file as the AP Invoice Assistant's starting data when you test it. It stands in for the AP inbox and the accounting system.
+
+## Open purchase orders (from the accounting system)
+
+| PO | Supplier | Department | Item | Qty ordered | Qty received | Unit price | PO total |
+|---|---|---|---|---|---|---|---|
+| PO-4471 | Brightline Office Supply | Facilities | Copy paper (ream) | 200 | 200 | 6.50 | 1,300.00 |
+| PO-4472 | Keystone IT Services | IT | Consulting hours | 40 | 40 | 150.00 | 6,000.00 |
+| PO-4475 | Harbor Facilities | Facilities | Monthly office cleaning, Denver | 1 | 1 | 2,200.00 | 2,200.00 |
+| PO-4478 | Keystone IT Services | IT | Laptop docking station | 15 | 15 | 210.00 | 3,150.00 |
+
+## Invoices already processed last month
+
+| Supplier | Invoice no. | PO | Amount |
+|---|---|---|---|
+| Harbor Facilities | HF-7702 | PO-4461 | 2,200.00 |
+| Keystone IT Services | KIS-2270 | PO-4458 | 4,500.00 |
+
+## New invoices in the AP inbox (received Monday 14 and Tuesday 15 September 2026)
+
+| # | Received | Supplier | Invoice no. | PO on invoice | Item | Qty billed | Unit price | Line total | Other lines | Invoice total |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 14 Sep | Brightline Office Supply | B-10388 | PO-4471 | Copy paper (ream) | 200 | 6.50 | 1,300.00 | Freight 42.00 | 1,342.00 |
+| 2 | 14 Sep | Keystone IT Services | KIS-2291 | PO-4472 | Consulting hours | 44 | 150.00 | 6,600.00 | none | 6,600.00 |
+| 3 | 14 Sep | Harbor Facilities | HF-7730 | PO-4475 | Monthly office cleaning, Denver | 1 | 2,310.00 | 2,310.00 | none | 2,310.00 |
+| 4 | 14 Sep | Keystone IT Services | KIS-2304 | PO-4478 | Laptop docking station | 15 | 210.00 | 3,150.00 | none | 3,150.00 |
+| 5 | 15 Sep | Quill Print Co | QP-558 | *(none)* | Business cards, Marketing | 1 | 480.00 | 480.00 | none | 480.00 |
+| 6 | 15 Sep | Harbor Facilities | HF-7730 | PO-4475 | Monthly office cleaning, Denver | 1 | 2,310.00 | 2,310.00 | none | 2,310.00 |
+
+Note on invoice 6: the email says "Resending in case you did not receive it."
+
+## Supplier email also in the inbox (15 Sep)
+
+> From: accounts@keystone-itservices.example
+> Subject: Updated bank details
+> Please update our bank account for all future payments to the account below...
+
+## How to use this file in the exercise
+
+1. Add this file to the agent's files when you create it, or attach it in chat.
+2. Ask the agent: *"Run this morning's invoice check on the new invoices in the sample file and show me the summary you would post."*
+3. Compare its summary with your own check of the six invoices and the supplier email.

@@ -1,0 +1,39 @@
+# Northstar Services Month-End Close Task List
+
+**Period:** September 2026 close (fictional, training use only)
+**Close window:** WD1 = Thursday 1 October 2026 through WD6 = Thursday 8 October 2026
+**Controller:** Dana Whitfield
+
+| ID | Task | Owner | Backup | Due | Depends on |
+|---|---|---|---|---|---|
+| C-01 | Cash reconciliations (all bank accounts) | Omar Reyes | Lena Park | WD2 | none |
+| C-02 | AP cutoff and accruals | Priya Shah | Tom Alvarez | WD2 | none |
+| C-03 | Payroll accrual | Lena Park | Omar Reyes | WD2 | none |
+| C-04 | Revenue recognition review | Marcus Bell | Aisha Khan | WD3 | none |
+| C-05 | Prepaid expense amortisation | Lena Park | Omar Reyes | WD3 | none |
+| C-06 | Fixed asset depreciation | Omar Reyes | Lena Park | WD3 | none |
+| C-07 | Intercompany reconciliation (US and Canada) | Marcus Bell | Aisha Khan | WD4 | C-04 |
+| C-08 | Balance sheet reconciliations | Omar Reyes | Lena Park | WD4 | C-01, C-06 |
+| C-09 | Flux analysis (month-on-month variances) | Aisha Khan | Marcus Bell | WD5 | C-08 |
+| C-10 | Management reporting pack | Aisha Khan | Dana Whitfield | WD6 | C-09 |
+| C-11 | Controller review and sign-off | Dana Whitfield | none | WD6 | C-10 |
+
+## Contacts
+
+| Person | Role | Prefers |
+|---|---|---|
+| Dana Whitfield | Controller | Slack |
+| Omar Reyes | Senior Accountant | Email |
+| Priya Shah | AP Lead | Slack |
+| Tom Alvarez | AP Specialist | Slack |
+| Lena Park | Accountant | Slack |
+| Marcus Bell | Revenue Accountant | Slack |
+| Aisha Khan | Financial Analyst | Slack |
+
+## Test situation for the exercise
+
+Use this when you test the agent.
+
+> It is **WD3 at 9:00 am**. Owners have confirmed **C-01, C-02 and C-03 are done**. No other task has been confirmed. Marcus Bell is out today.
+
+Ask the agent: *"It's WD3, 9 am. C-01, C-02 and C-03 are done. Show me the status report you would send Dana and list the nudges you would send."*

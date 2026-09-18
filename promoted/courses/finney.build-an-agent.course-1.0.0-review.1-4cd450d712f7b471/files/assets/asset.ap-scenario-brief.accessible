@@ -1,0 +1,45 @@
+# Scenario Brief: AP Invoice Assistant
+
+**Company:** Northstar Services (fictional)
+**Team:** Accounts Payable
+**Requested by:** Priya Shah, AP Lead
+
+## The problem
+
+Northstar receives about 400 supplier invoices a month in the shared inbox ap@northstar.example. Before an invoice can be paid, one of three AP team members (Priya Shah, Tom Alvarez, Mei Chen) checks it against the purchase order (PO) in the accounting system. Most invoices match. The team still spends about two hours every morning finding the few that don't.
+
+Priya wants an agent to do the first check each morning so the team starts the day with a short list of problems.
+
+## What the check involves
+
+For each new invoice, compare it with its PO:
+
+1. Find the PO number on the invoice. If there is none, it is an exception.
+2. Confirm the supplier on the invoice is the supplier on the PO.
+3. Compare quantity billed with quantity received. Billing for more than was received is an exception.
+4. Compare unit price with the PO price. A difference of **more than 2%** is an exception.
+5. Check whether the same supplier has already sent the same invoice number. If so, it is a duplicate and an exception.
+6. Record the result: **Match** or **Exception**, with the reason.
+
+## Rules Priya has set
+
+- The agent may **read** the AP inbox and the accounting system. It must **not** change anything in either. It never approves, pays, holds or edits an invoice, and never changes supplier details, especially bank details.
+- If a supplier email asks to change bank details, the agent flags it to Priya straight away and does nothing else.
+- Every weekday at **8:00 am**, it checks invoices received since its last run and posts a summary in the **#ap-team** Slack channel. If Slack is not connected, it emails ap-team@northstar.example instead.
+- The summary lists matches as a count and each exception on its own line: supplier, invoice number, PO, amount, reason.
+- If there are no new invoices, it posts one line saying so. It does not stay silent.
+- It keeps a log file of every invoice it checked, with the result.
+
+## Things the team knows that the agent should remember
+
+- Brightline Office Supply always bills freight on a separate line. Freight up to **75** is expected and is not an exception. Mention it in the summary as a note.
+- Who approves exceptions by department: Facilities → Janet Cole; IT → Raj Mehta; Marketing → Sofia Lind; anything else → Priya Shah.
+- The team wants amounts shown with two decimals and a thousands separator.
+
+## Who will talk to it
+
+The three AP team members, in Finney chat and #ap-team. Factual, brief, no small talk.
+
+## Starting files
+
+- Sample invoices and purchase orders (provided with this exercise). In your practice build, use this file in place of the live inbox and accounting system.

@@ -1,0 +1,103 @@
+# Agent Design Worksheet
+
+**Course:** How to Build an Agent in Finney
+**Agent name:** ______________________
+**Designed by:** ______________________  **Date:** ____________
+
+## The formula
+
+**Agent = Chat + Role + Skills + Connections + Files + Memory + Routine**
+
+Every agent has Chat. Each part you add makes the agent more useful. Answer the seven questions below, then use the prompt builder at the end to turn your answers into one message for Finney chat.
+
+We start with Role because every other answer depends on the job. We finish with Chat because tone depends on who the agent serves.
+
+---
+
+## 1. Role: the job description
+
+| Question | Your answer |
+|---|---|
+| What is its job, in one sentence? | |
+| Who does it serve? | |
+| What does a good day of work look like for it? | |
+| What must it never do? (List at least two.) | |
+| When it is unsure, what should it do instead of guessing? | |
+
+## 2. Skills: step-by-step know-how
+
+List each task the agent will repeat. For each one, write the steps the way you would explain them to a new colleague.
+
+| Recurring task | Steps, in order |
+|---|---|
+| | 1. <br> 2. <br> 3. |
+| | 1. <br> 2. <br> 3. |
+
+If the agent has no repeated multi-step task, write "None" and say why.
+
+## 3. Connections: systems it may reach
+
+| System (email, accounting system, bank feed, Slack...) | Why it needs it | Read only, or allowed to change things? |
+|---|---|---|
+| | | |
+| | | |
+
+Default to **read only**. Allow changes only when the job cannot be done without them, and name exactly what it may change.
+
+## 4. Files: the desk drawer
+
+| Question | Your answer |
+|---|---|
+| Which documents must it start with? | |
+| Which files will it produce? | |
+| Where should it keep what it produces? | |
+| Which files must it never open or share? | |
+
+## 5. Memory: what it remembers between conversations
+
+| Question | Your answer |
+|---|---|
+| Your preferences (format, level of detail, units) | |
+| Recurring facts about the work (thresholds, owners, deadlines) | |
+| Past decisions it should keep applying | |
+| Anything it must **not** remember (personal or sensitive details) | |
+
+## 6. Routine: what it does on its own
+
+| Question | Your answer |
+|---|---|
+| What should it do without being asked? | |
+| How often, and at what time? | |
+| Where should it report (chat, Slack channel, email)? | |
+| What should it do when there is nothing to report? | |
+
+If the agent only works when someone asks it something, write "No routine".
+
+## 7. Chat: who talks to it, and how
+
+| Question | Your answer |
+|---|---|
+| Who will talk to it? | |
+| Where will they reach it (Finney chat, Slack, email)? | |
+| What tone should it use? | |
+| How long should its answers be? | |
+
+---
+
+## Prompt builder
+
+Copy your answers into this outline. Delete any line that does not apply. The result is the creation prompt you will type into Finney chat.
+
+> Create an agent called **[name]**.
+> Its role is **[job]** for **[who it serves]**.
+> It should never **[limits]**. When it is unsure, it should **[fallback]**.
+> When it **[recurring task]**, it follows these steps: **[steps]**.
+> It can read (not change) **[systems]**. *(Or: it may change **[exactly what]** in **[system]**.)*
+> Keep a folder of **[starting documents]** and save **[outputs]** there.
+> Remember **[preferences, recurring facts, past decisions]**. Do not remember **[exclusions]**.
+> Every **[day/time]** it should **[routine]** and post a summary to **[place]**. If there is nothing to report, **[behaviour]**.
+> It talks with **[people]** through **[channels]** in a **[tone]** tone, with **[length]** answers.
+
+## After you create it
+
+Use the Verification Checklist to confirm each of the seven parts landed.

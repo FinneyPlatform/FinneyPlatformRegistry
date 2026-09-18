@@ -1,0 +1,63 @@
+# Seven-Part Verification Checklist
+
+**Course:** How to Build an Agent in Finney
+**Agent name:** ______________________  **Checked by:** ______________  **Date:** __________
+
+Finney builds the agent from your description. It may not build everything you asked for. This checklist helps you check each part and fix what is missing.
+
+## How to check
+
+1. Open the new agent.
+2. Ask it in chat: *"Describe yourself: your role, what you must never do, your skills, the systems you can reach and whether you can change them, your files, what you remember, and anything you do on a schedule."*
+3. Compare its answer with your worksheet.
+4. Then look at the agent's settings to confirm. An agent can describe itself wrongly. The settings show what Finney actually set up.
+5. Mark each part below. For every gap, fix it by chatting with Finney and check the part again.
+
+## The seven parts
+
+| # | Part | Where to look in Finney | It landed if... | Landed? (Yes / Gap / Not needed) | Notes |
+|---|---|---|---|---|---|
+| 1 | **Chat** | The agent's chat window, plus any connected channels such as Slack or email | You can open a chat and it answers in the tone you asked for. Channels you named are connected, or you know they still need connecting. | | |
+| 2 | **Role** | The agent's instructions | The instructions state the job, who it serves, the "never do" limits and what to do when unsure. | | |
+| 3 | **Skills** | Skills attached to the agent | Each recurring task has a skill, or the steps are written in the instructions, in the order you gave. | | |
+| 4 | **Connections** | Connected apps / integrations | Only the systems you named are connected. Each is read only unless you allowed changes. | | |
+| 5 | **Files** | The agent's file storage | Starting documents are there. It knows where to save what it produces. | | |
+| 6 | **Memory** | Memory and learning settings | Memory is switched on if you need it, and the facts you listed are recorded. | | |
+| 7 | **Routine** | Scheduled goals (Finney's name for routines) | The schedule, time and report location match your worksheet. No routine exists if you did not ask for one. | | |
+
+## Safety checks
+
+| Check | Yes / No |
+|---|---|
+| The agent refuses, or sends to a person, a request it must never do. (Try one.) | |
+| No connection allows changes you did not approve. | |
+| No confidential file was added that the job does not need. | |
+
+## Test questions
+
+Ask at least two questions a real user would ask. Record what happened.
+
+| Question asked | What the agent answered | Correct? | Action needed |
+|---|---|---|---|
+| | | | |
+| | | | |
+| | | | |
+
+## Gap fix log
+
+For each gap, write the message you sent to Finney and whether the re-check passed.
+
+| Part | Gap found | Message sent to fix it | Re-check passed? |
+|---|---|---|---|
+| | | *e.g. "Add a weekly routine that every Monday at 9 am..."* | |
+| | | | |
+
+## Fix-by-chat phrases
+
+- Role: *"Update the instructions: it must never ..."*
+- Skills: *"Add a skill called ... with these steps: ..."*
+- Connections: *"Change the ... connection to read only."*
+- Files: *"Add this file to the agent's files."* (attach the file)
+- Memory: *"Turn on memory and remember that ..."*
+- Routine: *"Add a routine that every weekday at 8 am ... and posts to ..."*
+- Chat: *"Keep answers under five sentences and use a friendly tone."*

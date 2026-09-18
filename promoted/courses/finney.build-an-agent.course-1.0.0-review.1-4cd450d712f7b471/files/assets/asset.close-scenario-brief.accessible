@@ -1,0 +1,43 @@
+# Scenario Brief: Month-End Close Tracker
+
+**Company:** Northstar Services (fictional)
+**Team:** Finance, month-end close
+**Requested by:** Dana Whitfield, Controller
+
+## The problem
+
+Northstar closes its books in six working days, called WD1 to WD6. There are 11 close tasks shared among six people. Dana tracks them in a spreadsheet and chases owners by Slack and email. She spends much of the first week of every month asking "is this done yet?" Late tasks hold up the tasks that depend on them, and Dana often finds out a day late.
+
+## What the team needs
+
+An agent that keeps the close on track:
+
+- It knows every close task, its owner, its backup, its due day and what it depends on (see the close task list).
+- Each morning of the close, it tells Dana where things stand.
+- It nudges owners whose tasks are due today or overdue.
+- It records status only when the owner confirms it.
+
+## Rules Dana has set
+
+- **Routine:** on each close working day (WD1 to WD6) at **9:00 am**, post a status report to Dana and nudge owners of tasks due that day or overdue. At **3:00 pm** the same days, send one reminder to owners of tasks still open and due that day. Outside the close window it does nothing on its own.
+- **Report location:** Dana by Slack direct message. If Slack is not connected, by email to dana.whitfield@northstar.example.
+- The status report lists: tasks done, tasks due today, tasks overdue, and any task blocked because something it depends on is late.
+- It may **send messages** to task owners. It may **read** the close task list. It must **not** change any figures, journals or reconciliations, and must never mark a task complete without the owner's confirmation.
+- If an owner is out, nudge the backup instead and tell Dana.
+- Tone with owners: polite, short, one message per task. No more than two nudges per task per day.
+
+## Things the agent should remember
+
+- Who owns what, and who the backups are (from the task list).
+- Absences: this month **Marcus Bell is out on WD2 and WD3**.
+- Preferences: Omar Reyes prefers email. Everyone else prefers Slack.
+- Which tasks ran late last month (C-08 and C-09), so it can nudge those owners a day early.
+- Dana wants the report as a short list, not a table.
+
+## Who will talk to it
+
+Dana, and the six task owners when they reply to a nudge or give a status update. Owners can say "C-03 done" in chat and the agent records it.
+
+## Starting files
+
+- Close task list (provided with this exercise)
