@@ -1,0 +1,31 @@
+# Use a quiz to find and repair a knowledge gap — learner brief
+
+Fictional Northstar Services training material.
+
+## Procurement P1–P5, September 2026
+P1: Requester records business need.
+P2: Procurement issues approved purchase order.
+P3: Receiving records receipt.
+P4: AP matches invoice to order and receipt; missing receipt goes to AP exception queue.
+P5: Treasury releases payment only after separate authorized approval.
+Glossary: purchase order = purchasing instruction; receipt = evidence of delivery; invoice = supplier payment request; payment approval = separate authority to release funds.
+Owner: Procurement Operations. No thresholds or holiday calendar supplied.
+
+Quiz themes: order, ownership, missing receipt, matching versus payment approval.
+
+## Task
+
+Before joining a close-process meeting, test your understanding of the same P1–P5 process.
+
+## Actions
+
+
+1. Provide P1–P5 to AI and request four questions with answers withheld.
+2. Answer without consulting the reference; mark uncertainty instead of asking for hints.
+3. Ask AI for feedback tied to P1–P5.
+4. Check each correction yourself and explain why one initial answer was incomplete; if all were correct, add a harder handoff question.
+5. Write a next-day recall prompt that can be used without the original chat.
+
+
+## Output
+Four questions; initial answers; source-based corrections; one-day revisit plan.

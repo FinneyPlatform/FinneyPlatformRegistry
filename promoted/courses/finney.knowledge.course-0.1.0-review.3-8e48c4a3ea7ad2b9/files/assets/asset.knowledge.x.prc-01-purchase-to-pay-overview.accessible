@@ -1,0 +1,34 @@
+PRC-01 Purchase-to-Pay Process Overview
+
+Version: September 2026 · Owner: Procurement Operations · Status: Current
+
+
+PURPOSE
+This overview describes the five stages a purchase moves through at Northstar Services, from the first request to the release of payment. It is an orientation document; it does not set approval limits.
+
+P1 — REQUEST
+The requester records the business need before any commitment is made.
+
+P2 — PURCHASE ORDER
+Procurement issues an approved purchase order. The purchase order is the purchasing instruction to the supplier.
+
+P3 — RECEIPT
+Receiving records receipt of the goods or services. The receipt is the evidence of delivery.
+
+P4 — INVOICE MATCHING
+Accounts Payable (AP) matches the supplier invoice to the purchase order and the receipt. An invoice without a recorded receipt goes to the AP exception queue.
+
+P5 — PAYMENT RELEASE
+Treasury releases payment only after a separate, authorized payment approval. Matching an invoice (P4) is not an approval to pay.
+
+GLOSSARY
+Term | Meaning in this document
+Purchase order | Purchasing instruction
+Receipt | Evidence of delivery
+Invoice | Supplier payment request
+Payment approval | Separate authority to release funds
+
+NOT COVERED BY THIS DOCUMENT
+Approval thresholds (amount limits) and the holiday calendar are not specified here. Do not infer them from other documents.
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.
