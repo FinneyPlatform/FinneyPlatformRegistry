@@ -1,0 +1,31 @@
+Budget-vs-actual dashboard data dictionary
+
+
+SHEET: Fields
+One row per unit/department/month. Amounts in USD thousands (USD 000).
+Field | Type | Rule
+unit | text | EAST or WEST
+department | text | Required
+period | YYYY-MM | One period per file
+currency | text | USD only
+budget | number | USD 000, required
+actual | number | USD 000, required
+key | derived | unit + department + period must be unique
+
+SHEET: Metrics
+Metric | Definition
+Variance | actual − budget
+Variance % | (actual − budget) ÷ budget
+Unit total | Sum over departments for the selected unit
+
+SHEET: Expected totals
+Use these to check your dashboard.
+File | Filter | Budget | Actual | Variance
+september.json | All | 350 | 360 | 10
+september.json | EAST | 180 | 180 | 0
+september.json | WEST | 170 | 180 | 10
+october.json | All | 220 | 220 | 0
+october.json | EAST | 100 | 105 | 5
+october.json | WEST | 120 | 115 | -5
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.

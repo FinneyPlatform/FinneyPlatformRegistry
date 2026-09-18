@@ -1,0 +1,14 @@
+Tracker transition test cases
+
+
+SHEET: Transitions
+Case | Item | From | Action | Expected | Actual | Pass?
+1 | C1 | open | Block without a reason | Refused; reason required |  | 
+2 | C1 | open | Block with reason | blocked, reason saved |  | 
+3 | C2 | blocked | Mark done directly | Refused; must reopen first |  | 
+4 | C2 | blocked | Reopen | open, reason cleared |  | 
+5 | C3 | done | Block | Refused; must reopen first |  | 
+6 | All | — | Reload page | State restored (or session-only warning) |  | 
+7 | All | — | Import malformed JSON | Whole import rejected; state unchanged |  | 
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.

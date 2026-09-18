@@ -1,0 +1,17 @@
+Handoff test matrix
+
+
+SHEET: Six tests
+# | Test | Steps | Expected | Actual | Defect? | Retest result
+1 | Normal | 10 seats, 25.50, 100 | 255.00 / 355.00 |  |  | 
+2 | Boundary | 500 seats, 1000, 100000 | 500,000.00 / 600,000.00 |  |  | 
+3 | Invalid | Seats -1 | Visible error; no result |  |  | 
+4 | Reset / recovery | Enter invalid, then fix | Error clears; correct result |  |  | 
+5 | Keyboard | Complete case 1 without a mouse | All fields reachable and labelled |  |  | 
+6 | Reopen | Close and reopen the file | Opens cleanly with empty or default inputs |  |  | 
+
+SHEET: Defect log
+Defect | Found in test | Fix | Retest date | Result
+(4 blank rows for your entries)
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.

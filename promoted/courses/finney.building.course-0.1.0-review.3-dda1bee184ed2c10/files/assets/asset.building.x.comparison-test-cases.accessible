@@ -1,0 +1,12 @@
+Calculator comparison test cases
+
+
+SHEET: Comparison
+Shared price 25.50 and setup 100. Difference = B − A.
+Case | A seats | B seats | Expected A first month | Expected B first month | Expected difference | Actual | Pass?
+Standard comparison | 10 | 12 | 355.00 | 406.00 | 51.00 |  | 
+Equal seats | 10 | 10 | 355.00 | 355.00 | 0.00 |  | 
+Invalid B (blank) | 10 | (blank) | 355.00 | — | Comparison cleared |  | 
+Original single case regression | 10 | — | 355.00 | — | — |  | 
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.

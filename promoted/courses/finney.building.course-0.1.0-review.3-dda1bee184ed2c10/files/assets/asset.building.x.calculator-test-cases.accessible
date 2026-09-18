@@ -1,0 +1,15 @@
+Cost calculator test cases
+
+
+SHEET: Test cases
+Recurring = seats × price. First month = recurring + setup. No tax or discount.
+Case | Seats | Price USD | Setup USD | Expected recurring | Expected first month | Actual | Pass?
+Valid case | 10 | 25.5 | 100 | 255.00 | 355.00 |  | 
+Zero seats | 0 | 25.5 | 100 | 0.00 | 100.00 |  | 
+Blank seats | (blank) | 25.5 | 100 | Rejected with message | — |  | 
+Negative price | 10 | -1 | 100 | Rejected with message | — |  | 
+Fractional seats | 2.5 | 25.5 | 100 | Rejected with message | — |  | 
+Excess precision | 10 | 25.505 | 100 | Rejected with message | — |  | 
+Seats above limit | 501 | 25.5 | 100 | Rejected with message | — |  | 
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.

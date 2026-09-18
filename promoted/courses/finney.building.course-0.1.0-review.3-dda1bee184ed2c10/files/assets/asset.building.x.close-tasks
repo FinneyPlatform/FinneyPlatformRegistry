@@ -1,0 +1,6 @@
+id,unit,area,status
+T1,East,AP,open
+T2,East,AR,done
+T3,West,AP,blocked
+T4,West,GL,open
+T5,East,GL,done

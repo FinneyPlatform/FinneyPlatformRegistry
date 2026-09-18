@@ -1,0 +1,23 @@
+Add safe local refresh and test rejected data — learner brief
+Fictional Northstar Services training material.
+Refresh
+Replace-only local JSON import. Validate entire candidate: required fields, numeric amounts, one valid period, unique keys, EAST/WEST, USD. Reject duplicate/missing actual/EUR; preserve last valid state. Empty data explicit.
+Task
+The next period's data should replace the September view only if the whole file passes validation.
+Actions
+	1	Specify replace-only refresh and all-or-nothing validation.
+	2	Ask AI to add local JSON file selection with validation of keys, required numeric fields, currency, and period consistency.
+	3	Load the valid October fixture and confirm two rows and 220/220/0.
+	4	Try each invalid variant and verify that an explanatory error appears while October remains the current valid dataset.
+	5	Check that the displayed period and row count always match the last valid data.
+	6	Record the refresh limitation: local-only, no live integration.
+Output
+Refresh contract; revised source; valid/invalid test results; last-valid-state evidence; data-status label.
+Supplied local practice files
+	•	dashboard-starter.html
+	•	invalid-currency.json
+	•	invalid-duplicate.json
+	•	invalid-missing.json
+	•	october.json
+	•	september.json
+Keep these files together. Scripts take explicit paths; choose new output folders. Use a plain text editor to inspect source before running. Browser prototypes open locally; do not deploy them.

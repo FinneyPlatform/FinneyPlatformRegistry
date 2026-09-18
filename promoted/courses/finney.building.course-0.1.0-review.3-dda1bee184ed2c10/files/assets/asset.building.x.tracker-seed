@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "C1",
+      "title": "AP support",
+      "status": "open"
+    },
+    {
+      "id": "C2",
+      "title": "AR support",
+      "status": "blocked",
+      "reason": "awaiting support"
+    },
+    {
+      "id": "C3",
+      "title": "GL support",
+      "status": "done"
+    }
+  ]
+}
