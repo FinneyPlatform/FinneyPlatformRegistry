@@ -1,0 +1,25 @@
+September 2026 spend variance pack
+
+
+SHEET: Summary
+Operating unit spend, USD. Variance = actual − budget.
+Line | Budget USD | Actual USD | Variance USD | Variance %
+Salaries | 120000 | 120000 | 0 | 0.0%
+Contractors | 40000 | 52000 | 12000 | 30.0%
+Travel | 10000 | 16000 | 6000 | 60.0%
+Software | 20000 | 20000 | 0 | 0.0%
+Other | 10000 | 10000 | 0 | 0.0%
+Total | 200000 | 218000 | 18000 | 9.0%
+
+SHEET: Approved explanations
+Fact | Statement | Status
+F1 | September budget USD 200,000 | Approved
+F2 | September actual USD 218,000; variance USD 18,000 (9%) | Approved
+F3 | Variance explained by USD 12,000 contractor extension and USD 6,000 travel | Approved
+
+SHEET: Open items
+Fact | Item | Status | Owner | Due
+F4 | Forecast revision | Proposed — NOT approved | Controller | 
+F5 | Confirm remaining contractor end date | Open | Operations lead | 2026-09-25
+
+Northstar Services is a fictional company. All names, figures, and dates are training material.

@@ -1,0 +1,14 @@
+Draft minutes and an action-focused follow-up — learner brief
+Fictional Northstar Services training material.
+Numbered transcript
+L1 Controller: I approve moving the internal draft review to September 27. L2 Analyst: I propose a new dashboard. L3 Controller: We have not decided on that. L4 Operations lead: I agree to check missing support, but September 24 may be too soon. L5 Controller: Let us confirm timing later. L6 Analyst: The checklist needs updating. L7 Controller: No owner has been assigned.
+Task
+Northstar's close meeting contains a decision, a proposal, and an ambiguous deadline. Prepare an accurate record.
+Actions
+	1	Read the transcript and mark explicit agreement separately from suggestions.
+	2	Ask AI for decision, proposal, and action tables with line references.
+	3	Check every owner and date; leave the checklist owner unassigned and support due date unconfirmed.
+	4	Draft a follow-up that asks for those two clarifications.
+	5	Compare the follow-up against the tables and correct any status drift.
+Output
+Decision register; proposal list; action register with unknown fields; follow-up up to 180 words; line references.
